@@ -1,0 +1,84 @@
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000B2;
+    padding-bottom: 40px;
+}
+
+.titleFile {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+}
+
+.containerFiles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.containerFile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #C1C1C1;
+    border-radius: 30px;
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.containerCheckbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.containerWarning {
+    border: 1px solid #C1C1C1;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #C1C1C1;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #C1C1C1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonWhite {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border-radius: 5px;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #C1C1C1
+}

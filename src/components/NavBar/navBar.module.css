@@ -1,0 +1,27 @@
+.containerNavBar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 16px;
+}

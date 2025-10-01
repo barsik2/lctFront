@@ -1,0 +1,16 @@
+body {
+    font-family: 'Inter';
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_opsz\,wght.ttf');
+    font-weight: 400;
+    font-size: normal;
+}

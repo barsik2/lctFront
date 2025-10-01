@@ -1,0 +1,75 @@
+.container {
+  display: inline-block;
+}
+
+.checkboxContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C1C1C1;
+  border-radius: 4px;
+  background-color: #C1C1C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.customCheckbox.checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.customCheckbox:focus-visible {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.customCheckbox:hover:not(.disabled) {
+  border-color: #000000;
+}
+
+.customCheckbox.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.customCheckbox.disabled:hover {
+  border-color: #C1C1C1;
+}
+
+.checkmark {
+  width: 12px;
+  height: 10px;
+}
+
+.labelText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000000;
+  cursor: default;
+  user-select: none;
+}
+
+.labelText.disabled {
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}

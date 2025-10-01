@@ -1,0 +1,171 @@
+.container {
+  max-width: 650px;
+}
+
+.dropZone {
+  border: 2px dashed #ccc;
+  border-radius: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropZone:hover,
+.dragOver {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.fileInput {
+  display: none;
+}
+
+.placeholder {
+  text-align: center;
+  margin: auto;
+}
+
+.filesContainer {
+  width: 100%;
+}
+
+.filesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filesHeader span {
+  font-weight: 500;
+  color: #333;
+}
+
+.addMoreButton {
+  background: none;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+.addMoreButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.fileList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fileItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: box-shadow 0.3s;
+}
+
+.fileItem:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fileIcon {
+  font-size: 1.5em;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.fileDetails {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.fileName {
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileInfo {
+  display: flex;
+  gap: 12px;
+  font-size: 0.85em;
+}
+
+.fileSize {
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.success {
+  color: #28a745;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.removeButton:hover {
+  background-color: #ffe6e6;
+}
+
+.validationErrors {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #dc3545;
+  border-radius: 6px;
+  background-color: #f8d7da;
+}
+
+.validationErrors h4 {
+  margin: 0 0 8px 0;
+  color: #721c24;
+}
+
+.validationError {
+  color: #721c24;
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.validationError:last-child {
+  margin-bottom: 0;
+}
+
+.dragText {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.supportedFormats {
+    font-weight: 400;
+    font-size: 14px;
+    color: #C1C1C1;
+}
