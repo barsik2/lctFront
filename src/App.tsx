@@ -4,7 +4,7 @@ import './App.css';
 import UploadDocument from './pages/UploadDocument/UploadDocument';
 import NavBar from './components/NavBar/NavBar';
 import StackTasks from './pages/StackTasks/StackTasks';
-// import NotFound from './pages/DecryptionFile';
+import DecryptionFile from './pages/DecryptionFile/DecryptionFile';
 
 
 const App: React.FC = () => {
@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<UploadDocument />} />
         <Route path="/stackTasks" element={<StackTasks />} />
-        {/* <Route path="/decryptionFile" element={<DecryptionFile  />} /> */}
+        <Route path="/decryptionFile" element={<DecryptionFile  />} />
       </Routes>
     </main>
     </div>

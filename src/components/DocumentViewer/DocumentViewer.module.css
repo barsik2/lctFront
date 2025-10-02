@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background: #fff;
+}
+
+.left {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.zoomInfo {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.zoomControls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.viewer {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 12px;
+}
+
+.imgWrapper {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.iframe {
+  width: 800px; /* reasonable default; will be scaled by wrapper */
+  height: 1100px;
+  border: none;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.right {
+  flex: 0 0 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 220px;
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rightTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.rightActions {
+  display: flex;
+  gap: 8px;
+}
+
+.textArea {
+  padding: 12px;
+  overflow: auto;
+  flex: 1 1 auto;
+}
+
+.text {
+    color: #000000B2;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
+.empty {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Responsive: stack on narrow viewports */
+@media (max-width: 880px) {
+  .container {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+    flex: 0 0 auto;
+    min-height: 200px;
+  }
+}
