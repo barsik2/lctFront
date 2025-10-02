@@ -9,6 +9,9 @@ import directoryIcon from '../../assets/icons/directory.svg';
 
 const UploadDocument: React.FC = () => {
     const [isChecked1, setIsChecked1] = useState(false);
+    const [isChecked2, setIsChecked2] = useState(false);
+    const [isChecked3, setIsChecked3] = useState(false);
+    const [isChecked4, setIsChecked4] = useState(false);
     const [textValue, setTextValue] = useState('');
     const [textValue1, setTextValue1] = useState('');
     const [textValue2, setTextValue2] = useState('');
@@ -45,18 +48,18 @@ const UploadDocument: React.FC = () => {
                             />
                             <Checkbox
                                 label="Автоматический поворот"
-                                checked={isChecked1}
-                                onChange={setIsChecked1}
+                                checked={isChecked2}
+                                onChange={setIsChecked2}
                             />
                             <Checkbox
                                 label="Усиление контраста"
-                                checked={isChecked1}
-                                onChange={setIsChecked1}
+                                checked={isChecked3}
+                                onChange={setIsChecked3}
                             />
                             <Checkbox
                                 label="Подавление шумов"
-                                checked={isChecked1}
-                                onChange={setIsChecked1}
+                                checked={isChecked4}
+                                onChange={setIsChecked4}
                             />
                         </div>
 

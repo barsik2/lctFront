@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
                     <img src={uploadIcon} alt="" />
                     Загрузка
                 </Link>
-                <Link className={styles.link} to="/decryptionFile">
+                <Link className={styles.link} to="/stackTasks">
                     <img src={stackIcon} alt="" />
                     Очередь
                 </Link>
