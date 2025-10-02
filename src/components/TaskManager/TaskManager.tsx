@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./TaskManager.module.css";
+import IconPause from "../../assets/icons/pause.svg";
+import IconStop from "../../assets/icons/stop.svg";
+import IconEye from "../../assets/icons/eye.svg";
 
 export type TaskStatus = "running" | "queued" | "done";
 
@@ -29,24 +32,6 @@ const StatusPill: React.FC<{ status: TaskStatus }> = ({ status }) => {
   }
   return <span className={cls}>{label}</span>;
 };
-
-const IconPause = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="6" y="5" width="3" height="14" rx="1" stroke="currentColor" strokeWidth="1.5" />
-    <rect x="15" y="5" width="3" height="14" rx="1" stroke="currentColor" strokeWidth="1.5" />
-  </svg>
-);
-const IconStop = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
-  </svg>
-);
-const IconEye = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="12" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.4" />
-  </svg>
-);
 
 export const TaskRow: React.FC<{ item: TaskItem }> = ({ item }) => {
   return (
@@ -78,13 +63,13 @@ export const TaskRow: React.FC<{ item: TaskItem }> = ({ item }) => {
 
       <div className={styles.colActions}>
         <button className={styles.iconBtn} title="Pause">
-          <IconPause />
+          <img src={IconPause} alt="" />
         </button>
         <button className={styles.iconBtn} title="Stop">
-          <IconStop />
+          <img src={IconStop} alt="" />
         </button>
         <button className={styles.iconBtn} title="View">
-          <IconEye />
+          <img src={IconEye} alt="" />
         </button>
       </div>
     </div>
